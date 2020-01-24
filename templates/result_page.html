@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meet&Code2019. Ecology + AI</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+<h3>Meet&Code2019. Ecology + AI</h3>
+
+<div class="container">
+    <img src="data:image/png;base64, {{ image_base64 }}" alt="Red dot" />
+    <ul>
+    {% for name, text in matches.items() %}
+        <li>{{ name }}: {{ text }}</li>
+    {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
